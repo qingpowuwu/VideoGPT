@@ -28,8 +28,11 @@ After installng `deepspeed`, you can train a sparse transformer by setting the f
 ## Dataset
 The default code accepts data as an HDF5 file with the specified format in `videogpt/data.py`. An example of such a dataset can be constructed from the BAIR Robot data by running the script:
 ```bash
-sh scripts/preprocess/bair/create_bair_dataset.sh datasets/bair
-``` 
+cd /data/3dPrinter/1_VideoGPT-master/scripts/preprocess/bair
+sh create_bair_dataset.sh datasets/bair
+```
+<img width="1146" alt="Screenshot 2024-07-08 at 8 34 57 PM" src="https://github.com/qingpowuwu/VideoGPT/assets/140480316/25b1ca84-66a6-447e-bd51-10959eb43238">
+
 Alternatively, the code supports a dataset with the following directory structure:
 ```
 video_dataset/
